@@ -1,0 +1,344 @@
+@charset "utf-8";
+@font-face{
+    font-family:'Roboto', sans-serif;
+    src: url(../fontes/Roboto-Light.ttf);
+}
+
+*, 
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --cor-azul-claro:#00B4D8;
+    --cor-azul-escuro:#003057;
+    --cor-amarelo-escuro:#F29F05;
+    --cor-laranja:#F23005;
+    --cor-rosa:#F25444;
+    --cor-fonte1:#000000; 
+    --cor-fonte2:#FFFFFF;   
+    --cor-fonte3:#003057;
+    --fonte: 'Roboto', arial, sans-serif;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-family:var(--fonte);
+    color:var(--cor-fonte);
+    font-size:1.6rem;
+    font-family:'Roboto', sans-serif;
+        src: url(../fontes/Roboto-Light.ttf);
+
+}
+
+img{
+    max-width:100%;
+}
+
+.container{
+    max-width:1140px;
+    width:85%;
+    margin:0 auto;
+}
+
+header{
+    background:var(--cor-azul-claro);
+    min-height:215px;
+    padding-top:50px;
+}
+
+header .logo{
+    display:flex;
+    width:100%;
+    height:100px;
+}
+
+header .logo-alt{
+    display:none;
+}
+
+main .menu{
+    background:var(--cor-azul-escuro);
+    min-height:55px;
+}
+
+main .menu > ul{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    list-style:none;
+    font-size:1.4rem;
+    padding: 2rem;
+}
+
+main .menu a{
+    color:var(--cor-fonte2);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+main .menu a:hover,
+main .menu a.atual
+{
+    color:var(--cor-laranja);
+    border-bottom: .4rem solid var(--cor-laranja);
+
+}
+
+.botao{
+    background-color:var(--cor-amarelo-escuro);
+    color: var(--cor-fonte1);
+    text-decoration: none;
+    font-weight: bold;
+       
+}
+
+.botao:hover{
+    background-color: #f29f05ee;
+    
+}
+.botao-passagem{
+    width: 295px;
+    height:55px;
+    border-radius: 25px;
+    padding: 2rem;
+    margin-top:50px;
+
+}
+
+main .pacotes{
+    background-color: var(--cor-amarelo-escuro);
+}
+
+.titulo1{
+    background-color: var(--cor-azul-escuro);
+    display:inline-block;
+    padding: 1rem 5rem;
+    margin-left:10px;
+    margin-top:20px;
+    border-radius:15px;
+    color:var(--cor-fonte2);
+    font-size:20px;
+}
+
+#gramado{
+    background-color: var(--cor-laranja);
+    padding: 1rem 3.5rem;
+    border-radius:10px;
+    font-size:20px;
+    color:var(--cor-fonte2);
+    margin-top:-22px;
+}
+
+#turquia{
+    background-color: var(--cor-laranja);
+    padding: 1rem 3.5rem;
+    border-radius:10px;
+    font-size:20px;
+    color:var(--cor-fonte2);
+}
+
+#arraial{
+    background-color: var(--cor-laranja);
+    padding: 1rem 3.5rem;
+    border-radius:10px;
+    font-size:20px;
+    color:var(--cor-fonte2);
+}
+
+.container-conteudo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.categoria-pacotes p{
+    font-size:1.8rem;
+    color:var(--cor-fonte2);
+
+}
+.categoria-pacotes{
+    width:33%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem;
+    margin:3rem 2rem;
+    text-align:center;
+}
+
+.categoria-pacotes img,
+.empresa-conteudo p
+{
+    margin:2.5rem;
+}
+
+.informativo{
+    background-color:var(--cor-laranja);
+    border-top:10px solid var(--cor-rosa);
+    
+}
+
+.informativo p{
+    text-align:center;
+    font-size:20px;
+    width:900px;
+    margin-right: 170px;
+    margin-top:-70px;
+}
+.informativo img{
+    margin-bottom: 10px;
+}
+.titulocovid{
+    background-color:var(--cor-azul-escuro);
+    padding: 1rem 2rem;
+    font-size:20px;
+    margin-left:18px;
+    margin-right: 1200px;
+    margin-top: 30px;
+    margin-bottom:15px;
+    color:var(--cor-fonte2);
+    text-align: center;
+}
+
+.servicos{
+    background-color:var(--cor-azul-escuro);
+    border-top:10px solid var(--cor-amarelo-escuro)
+}
+
+.contatos{
+    background-color: var(--cor-amarelo-escuro);
+    min-height:300px;
+}
+footer{
+    background-color: var(--cor-azul-claro);
+    border-top: 15px solid var(--cor-azul-escuro);
+    min-height:185px;
+
+}
+.titulo3{
+    background-color: var(--cor-laranja);
+    width:320px;
+    padding:1.3rem 5rem;
+    border-radius:15px;
+    margin-top:25px;
+    margin-left:35px;
+    margin-bottom:45px;
+    color:var(--cor-fonte2);
+}
+
+.categoria-servicos{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    padding:2.5rem;
+    text-align: center;
+}
+
+.titulo4{
+    background-color: var(--cor-amarelo-escuro);
+    width:270px;
+    padding:0.5rem 1rem;
+    margin-bottom:50px;
+}
+
+.categoria-servicos p{
+    color:var(--cor-fonte2);
+    font-size:1.8rem;
+    text-align: center;
+    width:250px;
+    margin-top:30px;
+    margin-right:90px;
+    margin-left:80px;
+    margin-bottom: 120px;
+}
+
+.servicos > a.botao-saibamais{
+    width:200px;
+    height:55px;
+    font-size:20px;
+    padding-top: 1.5rem;
+    border-radius:5px;
+    margin-bottom:-500px;
+    margin-left:1040px;
+    margin-top:100px;
+    background-color:var(--cor-amarelo-escuro);
+    color: var(--cor-fonte1);
+    text-decoration: none;
+    font-weight: bold;
+    position:relative;
+    top:-70px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left:35px;
+}
+
+
+.categoria-contatos{
+    width:33%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+
+#titulo5{
+    background-color: var(--cor-laranja);
+    width:250px;
+    min-height:40px;
+    padding-top:1rem;
+    margin-top:35px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#titulo6{
+    background-color: var(--cor-laranja);
+    width:250px;
+    min-height:40px;
+    padding-top:1rem;
+    margin-top:-2px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom:10px;
+
+}
+
+
+#titulo7{
+    background-color: var(--cor-laranja);
+    width:250px;
+    min-height:40px;
+    padding-top:1rem;
+    margin-top:50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+#titulo8{
+    font-size:22px;
+    margin-top:20px;
+    margin-right: 20px;
+    color:var(--cor-fonte3);
+}
+.frase-final img{
+    margin-top:80px;
+    margin-left:20px;
+}
+
+
+
+
+    
+
+
